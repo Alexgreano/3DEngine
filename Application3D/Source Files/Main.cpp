@@ -47,7 +47,7 @@ int main(int argc, char** argv)
 
 		SDL_PumpEvents();
 
-		glClearColor(0.85f, 0.85f, 0.85f, 1.0f);
+		glClearColor(0.60f, 0.85f, 0.85f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glBegin(GL_TRIANGLES);
