@@ -154,6 +154,11 @@
     <ClCompile Include="..\ThirdParty\glad\src\glad.c" />
     <ClCompile Include="Source Files\Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{8b2cea28-a835-4c42-a987-afbed434ce8c}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
