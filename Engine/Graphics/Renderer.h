@@ -1,8 +1,8 @@
 #pragma once
 #include "Framework/System.h"
-#include "Texture.h"
 #include "Math/MathTypes.h"
-#include "Math/MathUtilis.h"
+
+#include <glad/glad.h>
 #include <SDL.h>
 #include <string>
 
@@ -20,7 +20,7 @@ namespace nc {
 		friend class Texture;
 
 	private:
-		SDL_Renderer* renderer{ nullptr };
+		SDL_GLContext context;
 		SDL_Window* window{ nullptr };
 
 	};

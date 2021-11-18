@@ -50,9 +50,6 @@
     <ClCompile Include="Resource\ResourceSystem.cpp">
       <Filter>Source Files\Resource</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Texture.cpp">
-      <Filter>Source Files\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="Object\Scene.cpp">
       <Filter>Source Files\Object</Filter>
     </ClCompile>
@@ -95,6 +92,12 @@
     <ClCompile Include="Graphics\Renderer.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\glad\src\glad.c">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Framework\EventSystem.h">
@@ -113,9 +116,6 @@
       <Filter>Source Files\Resource</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Renderer.h">
-      <Filter>Source Files\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Texture.h">
       <Filter>Source Files\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Resource\Resource.h">
@@ -177,6 +177,9 @@
     </ClInclude>
     <ClInclude Include="Object\Scene.h">
       <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Source Files\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
