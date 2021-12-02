@@ -11,8 +11,13 @@ namespace nc {
 
 		std::for_each(systems.begin(), systems.end(), [](auto& system) {system->Startup(); });
 
+		REGISTER_CLASS(Actor)
 		REGISTER_CLASS(PhysicsComponent)
 		REGISTER_CLASS(AudioComponent)
+		REGISTER_CLASS(CameraComponent)
+		REGISTER_CLASS(MeshComponent)
+		REGISTER_CLASS(FreeCameraController)
+		REGISTER_CLASS(ModelComponent)
 	}
 	void Engine::Shutdown() {
 		std::for_each(systems.begin(), systems.end(), [](auto& system) {system->Shutdown(); });

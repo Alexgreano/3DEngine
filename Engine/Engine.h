@@ -29,6 +29,10 @@
 //graphics
 #include "Graphics/Renderer.h"
 #include "Graphics/Texture.h"
+#include "Graphics/Shader.h"
+#include "Graphics/Texture.h"
+#include "Graphics/Material.h"
+#include "Graphics/VertexBuffer.h"
 
 //objects
 #include "Object/Actor.h"
@@ -41,6 +45,10 @@
 //component
 #include "Component/PhysicsComponent.h"
 #include "Component/AudioComponent.h"
+#include "Component/CameraComponent.h"
+#include "Component/MeshComponent.h"
+#include "Component/FreeCameraController.h"
+#include "Component/ModelComponent.h"
 
 #define NOMINMAX
 //#include "core.h"
