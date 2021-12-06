@@ -1,6 +1,7 @@
 #pragma once
 #include "../Resource/Resource.h"
 #include "Shader.h"
+#include "Engine.h"
 #include <map>
 #include <vector>
 #include <memory>
@@ -13,7 +14,7 @@ namespace nc
 		Program();
 		~Program();
 
-		bool Load(const std::string& name, void* data) override;
+		bool Load(const std::string& filename, void* data);
 		void AddShader(const std::shared_ptr<Shader>& shader);
 
 		void Link();

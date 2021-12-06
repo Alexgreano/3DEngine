@@ -1,5 +1,7 @@
 #pragma once
 #include "Component.h"
+#include "CameraComponent.h"
+#include "Engine.h"
 
 namespace nc
 {

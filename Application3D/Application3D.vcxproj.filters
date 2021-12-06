@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{75937cd5-30cb-4c41-9671-4e384eab5be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Materials">
+      <UniqueIdentifier>{2e7aecf9-b0c2-42bf-ab31-517f457f086a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Models">
+      <UniqueIdentifier>{353c94d2-6f3e-4a3a-aa28-b9ffdb0fb591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{221ce7e7-0762-4d1f-8fb9-2f7ad15fe15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scenes">
+      <UniqueIdentifier>{daa2ab6c-3953-4a97-83e4-17c87b10bf11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source Files\Main.cpp">
@@ -21,15 +36,95 @@
     <ClCompile Include="..\ThirdParty\glad\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Build\resources\textures\Main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Build\resources\shaders\basic.vert">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="..\Build\resources\shaders\basic.frag">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="..\Build\resources\shaders\light.frag" />
-    <None Include="..\Build\resources\shaders\light.vert" />
+    <None Include="..\Build\resources\shaders\basic.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\flat.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\flat.shdr">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\flat.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\gouraud.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\gouraud.shdr">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\gouraud.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\phong.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\phong.shdr">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\phong.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\spot.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\wood.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\scenes\main.scn">
+      <Filter>Resource Files\Scenes</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Build\resources\models\buddha.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\bunny.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\cube.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\dragon.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\spot.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\teapot.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\ogre.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+    <Object Include="..\Build\resources\models\sphere.obj">
+      <Filter>Resource Files\Models</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Build\resources\textures\llama.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\ogre_diffuse.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\rocks.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\spot.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\wood.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>
