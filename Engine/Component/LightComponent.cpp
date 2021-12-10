@@ -16,13 +16,13 @@ namespace nc
 		// get all shaders in the resource system
 		auto shaders = actor->scene->engine->Get<ResourceSystem>()->Get<Program>();
 		// set shaders light properties
-			for (auto& shader : shaders)
-			{
-				shader->SetUniform("light.ambient", ambient);
-				shader->SetUniform("light.diffuse", diffuse);
-				shader->SetUniform("light.specular", specular);
-				shader->SetUniform("light.position", position);
-			}
+		for (auto& shader : shaders)
+		{
+			shader->SetUniform("light.ambient", ambient);
+			shader->SetUniform("light.diffuse", diffuse);
+			shader->SetUniform("light.specular", specular);
+			shader->SetUniform("light.position", position);
+		}
 	}
 
 	bool LightComponent::Write(const rapidjson::Value& value) const

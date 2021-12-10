@@ -1,7 +1,6 @@
 #pragma once
 #include "Program.h"
 #include "Texture.h"
-#include "Engine.h"
 
 namespace nc
 {

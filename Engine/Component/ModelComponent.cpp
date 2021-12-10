@@ -1,6 +1,7 @@
 #include "ModelComponent.h"
 #include "CameraComponent.h"
 #include "Object/Actor.h"
+#include "Engine.h"
 
 namespace nc
 {
@@ -11,6 +12,7 @@ namespace nc
 
 	void ModelComponent::Draw(Renderer* renderer)
 	{
+		material->shader->Use();
 		material->shader->SetUniform("model", owner->transform.matrix);
 		auto actor = owner->scene->FindActor("camera");
 		if (actor != nullptr)

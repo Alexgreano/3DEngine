@@ -19,9 +19,6 @@
     <Filter Include="Resource Files\Materials">
       <UniqueIdentifier>{2e7aecf9-b0c2-42bf-ab31-517f457f086a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Models">
-      <UniqueIdentifier>{353c94d2-6f3e-4a3a-aa28-b9ffdb0fb591}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files\Textures">
       <UniqueIdentifier>{221ce7e7-0762-4d1f-8fb9-2f7ad15fe15e}</UniqueIdentifier>
     </Filter>
@@ -35,9 +32,6 @@
     </ClCompile>
     <ClCompile Include="..\ThirdParty\glad\src\glad.c">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Build\resources\textures\Main.cpp">
-      <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,32 +77,48 @@
     <None Include="..\Build\resources\scenes\main.scn">
       <Filter>Resource Files\Scenes</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="..\Build\resources\models\buddha.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\bunny.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\cube.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\dragon.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\spot.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\teapot.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\ogre.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
-    <Object Include="..\Build\resources\models\sphere.obj">
-      <Filter>Resource Files\Models</Filter>
-    </Object>
+    <None Include="..\Build\resources\shaders\phong_normal.shdr">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\phong_normal.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\phong_normal.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\bricks.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\effects.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\effects.shdr">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\shaders\effects.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\ogre.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\plant.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\aircraft.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\chair.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\earth.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\car.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
+    <None Include="..\Build\resources\materials\boat.mtl">
+      <Filter>Resource Files\Materials</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Build\resources\textures\llama.jpg">
@@ -124,6 +134,15 @@
       <Filter>Resource Files\Textures</Filter>
     </Image>
     <Image Include="..\Build\resources\textures\wood.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\plantCOL.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\plantNOR.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="..\Build\resources\textures\ogre_normal.bmp">
       <Filter>Resource Files\Textures</Filter>
     </Image>
   </ItemGroup>

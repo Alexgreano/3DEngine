@@ -155,16 +155,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Build\resources\textures\Main.cpp" />
     <ClCompile Include="..\ThirdParty\glad\src\glad.c" />
     <ClCompile Include="Source Files\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Build\resources\materials\aircraft.mtl" />
+    <None Include="..\Build\resources\materials\boat.mtl" />
+    <None Include="..\Build\resources\materials\bricks.mtl" />
+    <None Include="..\Build\resources\materials\car.mtl" />
+    <None Include="..\Build\resources\materials\chair.mtl" />
+    <None Include="..\Build\resources\materials\earth.mtl" />
+    <None Include="..\Build\resources\materials\ogre.mtl" />
+    <None Include="..\Build\resources\materials\plant.mtl" />
     <None Include="..\Build\resources\materials\spot.mtl" />
     <None Include="..\Build\resources\materials\wood.mtl" />
     <None Include="..\Build\resources\scenes\main.scn" />
     <None Include="..\Build\resources\shaders\basic.frag" />
     <None Include="..\Build\resources\shaders\basic.vert" />
+    <None Include="..\Build\resources\shaders\effects.frag" />
+    <None Include="..\Build\resources\shaders\effects.shdr" />
+    <None Include="..\Build\resources\shaders\effects.vert" />
     <None Include="..\Build\resources\shaders\flat.frag" />
     <None Include="..\Build\resources\shaders\flat.shdr" />
     <None Include="..\Build\resources\shaders\flat.vert" />
@@ -174,6 +184,9 @@
     <None Include="..\Build\resources\shaders\phong.frag" />
     <None Include="..\Build\resources\shaders\phong.shdr" />
     <None Include="..\Build\resources\shaders\phong.vert" />
+    <None Include="..\Build\resources\shaders\phong_normal.frag" />
+    <None Include="..\Build\resources\shaders\phong_normal.shdr" />
+    <None Include="..\Build\resources\shaders\phong_normal.vert" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
@@ -181,18 +194,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\Build\resources\models\buddha.obj" />
-    <Object Include="..\Build\resources\models\bunny.obj" />
-    <Object Include="..\Build\resources\models\cube.obj" />
-    <Object Include="..\Build\resources\models\dragon.obj" />
-    <Object Include="..\Build\resources\models\ogre.obj" />
-    <Object Include="..\Build\resources\models\sphere.obj" />
-    <Object Include="..\Build\resources\models\spot.obj" />
-    <Object Include="..\Build\resources\models\teapot.obj" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="..\Build\resources\textures\llama.jpg" />
     <Image Include="..\Build\resources\textures\ogre_diffuse.bmp" />
+    <Image Include="..\Build\resources\textures\ogre_normal.bmp" />
+    <Image Include="..\Build\resources\textures\plantCOL.jpg" />
+    <Image Include="..\Build\resources\textures\plantNOR.jpg" />
     <Image Include="..\Build\resources\textures\rocks.bmp" />
     <Image Include="..\Build\resources\textures\spot.png" />
     <Image Include="..\Build\resources\textures\wood.png" />

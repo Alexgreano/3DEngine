@@ -1,6 +1,6 @@
 #include "Actor.h"
 #include "Graphics/Renderer.h"
-#include "Component/GraphicsComponent .h"
+#include "Component/GraphicsComponent.h"
 #include "Engine.h"
 #include <algorithm>
 

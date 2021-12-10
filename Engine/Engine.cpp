@@ -16,8 +16,10 @@ namespace nc {
 		REGISTER_CLASS(AudioComponent)
 		REGISTER_CLASS(CameraComponent)
 		REGISTER_CLASS(MeshComponent)
+		REGISTER_CLASS(ModelComponent)
 		REGISTER_CLASS(FreeCameraController)
 		REGISTER_CLASS(ModelComponent)
+		REGISTER_CLASS(LightComponent)
 	}
 	void Engine::Shutdown() {
 		std::for_each(systems.begin(), systems.end(), [](auto& system) {system->Shutdown(); });

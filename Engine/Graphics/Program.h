@@ -1,7 +1,7 @@
 #pragma once
-#include "../Resource/Resource.h"
+#include "Renderer.h"
 #include "Shader.h"
-#include "Engine.h"
+
 #include <map>
 #include <vector>
 #include <memory>
@@ -18,6 +18,7 @@ namespace nc
 		void AddShader(const std::shared_ptr<Shader>& shader);
 
 		void Link();
+		void DisplayInfo();
 		void Use();
 
 		GLuint GetID() { return program; }

@@ -1,6 +1,7 @@
 #pragma once
-#include "Component/GraphicsComponent .h"
+#include "GraphicsComponent.h"
 #include "Graphics/Material.h"
+#include "Graphics/Model.h"
 #include "Graphics/VertexBuffer.h"
 
 namespace nc

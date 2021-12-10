@@ -1,6 +1,5 @@
 #pragma once
-#include "Engine.h"
-#include "GraphicsComponent .h"
+#include "GraphicsComponent.h"
 #include "Graphics/Material.h"
 #include "Graphics/Model.h"
 

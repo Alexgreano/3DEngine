@@ -3,23 +3,17 @@
 #define REGISTER_CLASS(class) nc::ObjectFactory::Instance().Register<class>(#class);
 #define CREATE_ENGINE_OBJECT(class) nc::ObjectFactory::Instance().Create<nc::class>(#class);
 
-//#include "Graphics/ParticleSystem.h"
-#include "Audio/AudioSystem.h"
-
-//input
-#include "Input/InputSystem.h"
-
-//framework
-#include "Framework/EventSystem.h"
-#include "Resource/ResourceSystem.h"
-#include "Framework/Singleton.h"
-#include "Framework/Factory.h"
-
 //core
 #include "Core/Utilities.h"
 #include "Core/FileSystem.h"
 #include "Core/Timer.h"
+#include "Core/Json.h"
 #include "Core/Serializable.h"
+
+//framework
+#include "Framework/EventSystem.h"
+#include "Framework/Singleton.h"
+#include "Framework/Factory.h"
 
 //math
 #include "Math/Random.h"
@@ -27,35 +21,42 @@
 #include "Math/Transform.h"
 #include "Math/MathTypes.h"
 
+// audio
+#include "Audio/AudioSystem.h"
+
+//input
+#include "Input/InputSystem.h"
+
 //graphics
 #include "Graphics/Renderer.h"
 #include "Graphics/Texture.h"
 #include "Graphics/Shader.h"
-#include "Graphics/Texture.h"
+#include "Graphics/Program.h"
 #include "Graphics/Material.h"
 #include "Graphics/VertexBuffer.h"
+
+// resource
+#include "Resource/ResourceSystem.h"
 
 //objects
 #include "Object/Actor.h"
 #include "Object/Scene.h"
-
-#include <vector>
-#include <memory>
-#include <algorithm>
 
 //component
 #include "Component/PhysicsComponent.h"
 #include "Component/AudioComponent.h"
 #include "Component/CameraComponent.h"
 #include "Component/MeshComponent.h"
-#include "Component/FreeCameraController.h"
 #include "Component/ModelComponent.h"
 #include "Component/LightComponent.h"
 
-#define NOMINMAX
+#include "Component/FreeCameraController.h"
 
-//#include "core.h"
+//#define NOMINMAX
 
+#include <vector>
+#include <memory>
+#include <algorithm>
 
 namespace nc {
 	using ObjectFactory = Singleton<Factory<std::string, Object>>;
